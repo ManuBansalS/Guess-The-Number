@@ -10,7 +10,7 @@ const prev = document.querySelector('.previous')
 
 button.addEventListener('click', (e) => {
     e.preventDefault()
-    const remaining = 10 - userGuesses.length
+    const remaining = 7 - userGuesses.length
     const guess = parseInt(input.value);
     if (isNaN(guess) || guess < 1 || guess > 100) {
         result.textContent = "Please enter a valid number between 1 and 100."
